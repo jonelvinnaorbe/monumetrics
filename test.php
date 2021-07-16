@@ -3,12 +3,12 @@
  * Plugin Name: Test Plugin
  * Plugin URI: http://www.mywebsite.com/my-first-plugin
  * Description: The very first plugin that I have ever created.
- * Version: 1.1
+ * Version: 1.2
  * Author: Your Name
  * Author URI: http://www.mywebsite.com
  */
 
-echo 'testing here';
+echo 'v1.2';
 
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
