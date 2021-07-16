@@ -10,9 +10,12 @@
 
 echo 'testing here';
 
-// require 'plugin-update-checker/plugin-update-checker.php';
-// $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-// 	'https://github.com/user-name/repo-name/',
-// 	__FILE__,
-// 	'unique-plugin-or-theme-slug'
-// );
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/jonelvinnaorbe/monumetrics/',
+	__FILE__,
+	'monumetrics'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
